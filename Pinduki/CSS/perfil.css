@@ -1,0 +1,358 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #ffffff;   
+    font-family: 'Roboto', sans-serif;
+    flex-flow: column;
+}
+.conteudo{
+    background-color: #150d18;
+    width: 40%;
+    position: fixed;
+    top: 0%;
+    bottom: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.cabecinha{
+    max-width: 90%;
+}
+.pfp{
+    max-width: 10%;
+    border-radius: 100%;
+    position: absolute;
+    right: 79%;
+    bottom: 53%;
+    border: 2px solid #ffffff; /* 2px de espessura, estilo sólido, cor branca */ 
+    z-index: 1; 
+}
+.line{
+    width: 90%;
+}
+
+.msg-div{
+    background-color: #150d18;
+    color: white;
+    width:14%;
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    overflow-y: auto; 
+    left: 0;
+}
+
+.msg-title{
+    text-align: center;
+    padding: 3%;
+}
+
+.not-msg{
+    max-width: 80%;
+    border-radius: 30px;
+    background-color: #241729;
+    border: none;
+    padding: 4px;
+    margin-left: 8%;
+}
+
+.icon{
+    width: 18%;
+    border-radius: 100%;
+    display: block;
+    margin-left: 1%;
+}
+.name{
+    position:fixed;
+    background-color: #ffffff;
+    width: 5%;
+    height: 3%;
+    left: 38%;
+    top: 19.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.arroba{
+    top: 21.5%;
+    left: 38.5%;
+    position:fixed;
+    font-size: 12px;
+    color: #ffffff8a;
+}
+.num{
+    position:fixed;
+    left: 36.5%;
+    top: 27%;
+    display: flex;
+    gap: 115%;
+    font-size: 14px; /* Ajuste para o tamanho desejado */
+}
+.seguimores{
+    position:fixed;
+    left: 35.9%;
+    top: 28%;
+    display: flex;
+    gap: 25%;
+    font-size: 14px; /* Ajuste para o tamanho desejado */
+}
+.bio{
+    position:fixed;
+    left: 36.5%;
+    top: 34%;
+    font-size: 14px; /* Ajuste para o tamanho desejado */
+}
+.bio b,
+.bio p {
+    margin: 2px 0; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+}
+.linhazinha{
+    position:fixed;
+    width: 600px;
+    top: 45%;
+    border: 1px solid #493b53   ;   /* Cor e espessura da linha */
+
+}
+.botpost{
+    position:fixed;
+    border-radius: 15px;
+    padding: 4px;
+    width: 120px;
+    border: none;
+    background-color: #E4E1D9;
+    bottom: 49%;
+    left: 40%;
+}
+.botjog{
+    position:fixed;
+    border-radius: 15px;
+    padding: 4px;
+    width: 120px;
+    border: none;
+    background-color: #e4e1d944;
+    bottom: 49%;
+    right: 40%;
+    color: rgba(255, 255, 255, 0.719);
+}
+.posts-background{
+    background-color: #150d18;
+    color: white;
+    width: 40%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.post{
+    width: 90%;
+    background-color:#241729 ;
+    color: white;
+    margin-top: 70%;
+    height: auto;
+    padding: 30px; 
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+}
+
+.pfp-post{
+    width: 7%;
+    border-radius: 100%;    
+    margin-right: 2%;
+}
+
+.span-align{
+    display: flex;
+    align-items: center;
+}
+
+.hashtags{
+    background-color: #483052;
+    border-radius: 15px;
+    width: 10%;
+    text-align: center;
+    margin-left: 1%;
+    padding: 1px;
+}
+
+.img-do-post{
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 40%;
+    border-radius: 9px;
+}
+
+.span-align-img{
+    display: flex;
+}
+
+.span-align-text{
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.post-config{
+    border-radius: 100px;
+    width: 5%;
+    text-align: center;
+    margin-left: 40%;
+}
+.line{
+    width: 90%;
+}
+
+.msg-body{
+    background-color: #150d18;
+    color: white;
+    width:14%;
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    overflow-y: auto; 
+    left: 0;
+    
+}
+
+.msg-title{
+    text-align: center;
+    padding: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.not-msg{
+    max-width: 80%;
+    border-radius: 30px;
+    background-color: #241729;
+    border: none;
+    padding: 4px;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon-img{
+    width: 15%;
+    border-radius: 100%;
+    display: block;
+    margin-left: 1%;
+}
+
+.username{
+    color: white; 
+    margin-left: 10px; 
+    font-size: 14px;
+}
+.search-line{
+    color: white; 
+    margin-left: 10px; 
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.search-bar{
+    max-width: 70%;
+    border-radius: 30px;
+    background-color: #241729;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.search-icon{
+    width: 9%;
+    border-radius: 100%;
+    display: block;
+    margin-left: 1%;
+}
+
+.tools-body{
+    color: white;
+    border: none;
+    width:14%;
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    overflow-y: auto; 
+    right: 0;
+}
+
+.tools-icon{
+    width: 10%;
+    margin-left: 9%;
+}
+
+.tools-line{
+    color: white; 
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tools-background{
+    display: flex;
+    justify-content:flex-end ;
+    border: none;
+    padding: 4px;
+    margin-right: 20%;
+    align-items: center;
+}
+
+.new-post{
+    position: absolute;
+    bottom: 12%;   
+}
+
+.profile{
+    position: absolute;
+    bottom: 5%;   
+}
+
+.pfp2{
+    width: 18%;
+    border-radius: 100%;
+    margin-right: -4%;
+    margin-left: 7%;
+}
+.entperfil{
+    position: absolute;
+    padding: 20px;
+    background-color: #cc3fff00;
+    margin-left: 28%;
+    width: 145px;
+    border: 0px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    display: none; 
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #241729;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: none; 
+    width: 90%;
+    max-width: 650px;
+    height: 90%;
+    max-height: 325px;
+}
