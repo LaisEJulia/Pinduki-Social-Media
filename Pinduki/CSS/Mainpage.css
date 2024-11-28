@@ -368,4 +368,11 @@ img:hover{
   .percentage {
     font-weight: bold;
   }
-  
+  .entperfil{
+    position: absolute;
+    padding: 20px;
+    background-color: #cc3fff00;
+    margin-left: 28%;
+    width: 145px;
+    border: 0px;
+}
