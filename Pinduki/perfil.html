@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Pinduki</title>
+</head>
+<body>
+    
+    <Div class="msg-body">
+        <Div class="msg-title">
+            <h3> Mensagens </h3>
+            <hr class="line">    
+        </Div>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon.jpg" alt="icon" >
+            <span class="username">lisopastel</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon2.jpg" alt="icon" >
+            <span class="username">Moon_yayy</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon3.jpg" alt="icon" >
+            <span class="username">Garras da criação</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon4.jpg" alt="icon" >
+            <span class="username">Sculpted Wrath</span>   
+        </fieldset>  
+    </Div>
+   <!-- de uma pra outra -->
+
+    <div class="conteudo">
+
+       <img class="cabecinha" src="1340526.jpg" alt="cabeçalho">
+       <img class="pfp" src="pfp.jpg" alt="pfp">
+      <div class="name">
+        Nino_waa
+      </div>
+      <p class="arroba">@Meow_tastic</p>
+
+      <div class="num">
+        <b>12.265</b>
+        <b>27</b>
+      </div>
+      <div class="seguimores">
+        <p>Seguidores</p>
+        <p>Seguindo</p>
+      </div>
+      <div class="bio">
+        <b>“Vivamus, moriendum est”</b>
+        <p>Criador de Jogos pixel art há 2 anos</p>
+        <p>Crio meus jogos principalmente no SandBox Evolution</p>
+      </div>
+      <hr class="linhazinha">
+        <button class="botpost">Posts</button>
+        <button class="botjog">Jogos</button>  
+    </div>
+    <div class="posts-background">
+        <div class="post">
+            <div class="span-align">
+                <img class="pfp-post" src="pfp.jpg" alt="">
+                <span>Nino_waa</span>
+                <div class="hashtags">
+                    Ação
+                </div>
+                <div class="hashtags">
+                    RPG
+                </div>
+                <div class="hashtags">
+                    Horror
+                </div>        
+                <div class="post-config">
+                    . . .
+                </div>     
+            </div>
+            <div class="span-align-img">
+                <img class="img-do-post" src="icon3.jpg" alt="foto">
+                <span class="span-align-text">
+                    <br>Há tanto tempo criando esse jogo, acredito que mais um mês e ele finalmente vai estar pronto!!
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- de uma pra outra -->
+     
+    <div class="tools-body">
+        <div>
+            <br><br><br>
+            <fieldset class="search-bar">
+                <img class="search-icon" src="Img/search-icon.png" alt="">
+                <span id="search-bar" class="search-line">Pesquisar</span>
+            </fieldset>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <input type="text" placeholder="Pesquisar" />
+        </div>
+
+        <br><br>
+        <div>
+            <fieldset class="tools-background">
+                <span class="tools-line">Notificações</span>
+                <img class="tools-icon" src="Img/notificacao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Configurações</span>
+                <img class="tools-icon" src="Img/configuracao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Personalização</span>
+                <img class="tools-icon" src="Img/paleta.png" alt="">
+            </fieldset>
+    </div>
+        
+        <div class="new-post">
+            <fieldset class="tools-background">
+                <span class="tools-line">Novo Post</span>
+                <img class="tools-icon" src="Img/newpost.png" alt="">
+            </fieldset>
+        </div>
+            <br>
+        <div class="profile">
+            <button id="perfil" class="entperfil"></button>
+            <fieldset class="tools-background">
+                <span class="tools-line">Nino_waa <br> @meow_tastic</span>                
+                <img class="pfp2" src="pfp.jpg" alt="">
+            </fieldset>
+        </div>
+       
+    </div>
+   <script>
+    document.getElementById('perfil').onclick = function(){
+        window.location.href = 'perfil.html';
+    }
+   </script>
+       
+    </div>
+
+    <script>
+        const searchBar = document.getElementById('search-bar');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+
+        searchBar.addEventListener('click', () => {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+        });
+
+        overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        });
+
+        // Enquete
+        const pollData = {
+            azul: 0,
+            vermelho: 0,
+            verde: 0,
+            };
+
+            function updatePercentages() {
+            const totalVotes = Object.values(pollData).reduce((a, b) => a + b, 0);
+
+            document.querySelectorAll('.option').forEach((option) => {
+                const optionKey = option.dataset.option;
+                const percentage = totalVotes === 0 ? 0 : Math.round((pollData[optionKey] / totalVotes) * 100);
+                option.querySelector('.percentage').textContent = `${percentage}%`;
+            });
+            }
+
+            document.querySelectorAll('.option').forEach((option) => {
+            option.addEventListener('click', () => {
+                const optionKey = option.dataset.option;
+                pollData[optionKey]++;
+                updatePercentages();
+            });
+            });
+
+            updatePercentages();
+    </script>
+
+</body>
+</html>
