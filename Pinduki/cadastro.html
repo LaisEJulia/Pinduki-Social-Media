@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginecadastro.css">
+    
+    <title>Pinduki</title>
+</head>
+<body>
+    <fieldset class="poplogin">
+        <br><br>
+        <h2>Pinduki</h2>
+        <br><br>
+        <button id="botaologin" class="logdocadastro">Login</button>
+        <button id="botaocadastro" class="caddocadastro">Cadastro</button>
+        <br> <br>
+        <form action="">
+        <input class="digitaqui" type="text" id="fname" name="fname" value="" placeholder="Informe seu e-mail"><br>
+        <br>
+        <input class="digitaqui" type="text" id="fname" name="fname" value="" placeholder="Crie um nome de usuário"><br>
+        <br>
+        <input class="digitaqui" type="password" id="fname" name="fname" value="" placeholder="Crie uma senha"><br>
+        </form>
+        <br>
+        <button id="pagini" class="entrar">Cadastrar</button>
+    </fieldset>
+    <script>
+        document.getElementById('botaologin').onclick = function(){
+            window.location.href = 'login.html';
+        }
+        document.getElementById('pagini').onclick = function(){
+            window.location.href = 'regras.html';
+        }
+    </script>
+</body>
+</html>
