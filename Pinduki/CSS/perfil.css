@@ -356,3 +356,8 @@ body{
     height: 90%;
     max-height: 325px;
 }
+.curticomenta{
+    width: 4%;
+    position: absolute;
+    bottom: 0%;
+}
