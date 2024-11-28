@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/chat.css">
+    <link rel="stylesheet" href="CSS/Mainpage.css">
+    <title>Pinduki</title>
+</head>
+<body>
+
+    <Div class="msg-body">
+        <Div class="msg-title">
+            <h3> Mensagens </h3>
+            <hr class="line">    
+        </Div>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon.jpg" alt="icon" >
+            <span class="username">lisopastel</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon2.jpg" alt="icon" >
+            <span class="username">Moon_yayy</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon3.jpg" alt="icon" >
+            <span class="username">Garras da criação</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon4.jpg" alt="icon" >
+            <span class="username">Sculpted Wrath</span>   
+        </fieldset>  
+    </Div>
+
+    <div class="carrossel-container">
+        <div class="carrossel">
+            <img src="Img/Slide1.jpg" alt="Imagem 1">
+            <img src="Img/Slide2.jpg" alt="Imagem 2">
+            <img src="Img/Slide3.jpg" alt="Imagem 3">
+            <img src="Img/Slide4.jpg" alt="Imagem 4">
+            <img src="Img/Slide5.jpg" alt="Imagem 5">
+        </div>
+        
+    </div>
+    <div class="carousel-buttons">
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <br><br><br>
+    <div class="txt-jogos-recomendados">
+        <b>Jogos recomendados</b>
+    </div>
+    <div class="jogos-div" >
+        <img class="jogos" src="Img/Jogo1.jpg" alt="">
+        <img class="jogos" src="Img/Jogo2.jpg" alt="">
+        <img class="jogos" src="Img/Jogo3.jpg" alt="">
+        
+        <div class="div-nome-jogos">
+            <div class="nome-jogos">
+                <b>Celestia</b>
+            </div>
+            <div class="nome-jogos">
+                <b>A Última Luz</b>
+            </div>
+            <div class="nome-jogos">
+                <b>Coração do Reino</b>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="tools-body">
+        <div>
+            <br><br><br>
+            <fieldset class="search-bar">
+                <img class="search-icon" src="Img/search-icon.png" alt="">
+                <span id="search-bar" class="search-line">Pesquisar</span>
+            </fieldset>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <input type="text" placeholder="Pesquisar" />
+        </div>
+
+        <br><br>
+        <div>
+            <fieldset class="tools-background">
+                <span class="tools-line">Notificações</span>
+                <img class="tools-icon" src="Img/notificacao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Configurações</span>
+                <img class="tools-icon" src="Img/configuracao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Personalização</span>
+                <img class="tools-icon" src="Img/paleta.png" alt="">
+            </fieldset>
+    </div>
+        
+        <div class="new-post">
+            <fieldset class="tools-background">
+                <span class="tools-line">Novo Post</span>
+                <img class="tools-icon" src="Img/newpost.png" alt="">
+            </fieldset>
+        </div>
+            <br>
+        <div class="profile">
+            <fieldset class="tools-background">
+                <span class="tools-line">Nino_waa <br> @meow_tastic</span>                
+                <img class="pfp" src="Img/pfp.jpg" alt="">
+            </fieldset>
+        </div>
+       
+    </div>
+
+
+    <script>
+        let currentIndex = 0;
+
+        const slides = document.querySelectorAll('.carrossel img');
+        const totalSlides = slides.length;
+
+        function moveSlide(direction) {
+            currentIndex += direction;
+
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            }
+
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            document.querySelector('.carrossel').style.transform = `translateX(${offset}%)`;
+        }
+
+        document.querySelector('.carrossel').style.animation = 'none';
+
+    </script>
+
+</body>
+</html>

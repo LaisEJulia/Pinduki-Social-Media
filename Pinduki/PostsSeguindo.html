@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Mainpage.css">
+    <link rel="stylesheet" href="CSS/PostsSeguindo.css">
+    <title>Pinduki</title>
+</head>
+<body>
+    <Div class="msg-body">
+        <Div class="msg-title">
+            <h3> Mensagens </h3>
+            <hr class="line">    
+        </Div>
+
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon.jpg" alt="icon" >
+            <span class="username">lisopastel</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon2.jpg" alt="icon" >
+            <span class="username">Moon_yayy</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon3.jpg" alt="icon" >
+            <span class="username">Garras da criação</span>
+        </fieldset>
+        <br>
+        <fieldset class="not-msg">
+            <img class="icon-img" src="Img/Icon4.jpg" alt="icon" >
+            <span class="username">Sculpted Wrath</span>   
+        </fieldset>  
+    </Div>
+
+    <div class="explorar-jogos">
+        <h1>Explorar Jogos</h1>
+    </div>
+
+    <div class="conteudo-btns">
+        <div class="posts-btns">
+            <a href="Index.html" style="text-decoration: none; color: inherit;">Posts</a>
+        </div>
+        <div class="clicked-posts-btns">
+            Seguindo
+        </div>
+        <div class="posts-btns">
+            <a href="AjudaCriadores.html" style="text-decoration: none; color: inherit;">Ajuda à Criadores</a>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="posts-background"> 
+        <div class="post">
+            <div class="span-align">
+                <img style="border: solid 2px green;" class="pfp-post" src="Img/Icon5.jpg" alt="">
+                <span>marioo</span>        
+            </div>
+            <div>
+                <p class="span-align-text2">
+                    Trabalhando no meu novo jogo e mal posso esperar para ver o que vocês acham! Cada detalhe está sendo feito com muito carinho e atenção!
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="span-align">
+                <img style="border: solid 2px green;" class="pfp-post" src="Img/Icon6.jpg" alt="">
+                <span>Aryel</span>        
+            </div>
+            <div>
+                <p class="span-align-text2">
+                  DESGRAÇAAAAAAA NADA FUNCIONA >:(   
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="span-align">
+                <img style="border: solid 2px green;" class="pfp-post" src="Img/pfp2.jpg" alt="">
+                <span>kkyuuu</span>        
+            </div>
+            <div>
+                <p class="span-align-text2">
+                  Só queria agradecer a todos que me ajudaram no processo de criação do meu jogo, é um sonho de criança que tá se tornando realidade   
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tools-body">
+        <div>
+            <br><br><br>
+            <fieldset class="search-bar">
+                <img class="search-icon" src="Img/search-icon.png" alt="">
+                <span id="search-bar" class="search-line">Pesquisar</span>
+            </fieldset>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <input type="text" placeholder="Pesquisar" />
+        </div>
+
+        <br><br>
+        <div>
+            <fieldset class="tools-background">
+                <span class="tools-line">Notificações</span>
+                <img class="tools-icon" src="Img/notificacao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Configurações</span>
+                <img class="tools-icon" src="Img/configuracao.png" alt="">
+            </fieldset>
+            <br>
+            <fieldset class="tools-background">
+                <span class="tools-line">Personalização</span>
+                <img class="tools-icon" src="Img/paleta.png" alt="">
+            </fieldset>
+    </div>
+        
+        <div class="new-post">
+            <fieldset class="tools-background">
+                <span class="tools-line">Novo Post</span>
+                <img class="tools-icon" src="Img/newpost.png" alt="">
+            </fieldset>
+        </div>
+            <br>
+        <div class="profile">
+            <fieldset class="tools-background">
+                <span class="tools-line">Nino_waa <br> @meow_tastic</span>                
+                <img class="pfp" src="Img/pfp.jpg" alt="">
+            </fieldset>
+        </div>
+       
+    </div>
+
+    <script>
+        const searchBar = document.getElementById('search-bar');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+
+        searchBar.addEventListener('click', () => {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+        });
+
+        overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
