@@ -1,0 +1,155 @@
+.poplogin {
+    text-align: center;
+    color: white;
+    background-color: #6C628C;
+    width: 350px;
+    height: 450px;
+    position: relative; 
+    
+}
+
+body {
+    background-image: url('desfocado.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.digitaqui{
+    padding: 9px;
+    width: 250px;
+    text-align: center;
+    background-color: #FAF4FF;
+    border: 0ch;
+    border-radius: 2px;
+}
+.entrar{
+    padding: 9px;
+    width: 267px;
+    text-align: center;
+    background-color: #4D3370;
+    border: 0ch;
+    border-radius: 2px;
+    color: #FAF4FF;
+}
+.entrar:hover {
+    background-color: #321e4d;
+}
+.entrar:active {
+    background-color: #4D3370;
+}
+.esqueci{
+    padding: 4px;
+    background-color: #4d3370a2;
+    border: 0ch;
+    color: #FAF4FF;
+    margin-left: 132px;
+    border-radius: 2px;
+    margin-top: 50px;
+}
+.esqueci:hover {
+    background-color: #321e4d;
+}
+.logdocadastro{
+    padding: 9px;
+    width: 120px;
+    text-align: center;
+    background-color: #4D3370;
+    border: 0ch;
+    border-radius: 2px;
+    color: #FAF4FF;
+    margin-right: 172px;
+}
+.logdocadastro:hover {
+    background-color: #321e4d;
+}
+
+.caddocadastro{
+    padding: 9px;
+    width: 120px;
+    text-align: center;
+    background-color: #4D3370;
+    border: 0ch;
+    border-radius: 2px;
+    color: #FAF4FF;
+    margin-left: -148px;
+}
+.caddocadastro:hover {
+    background-color: #321e4d;
+}
+
+.cadcaddocadastro{
+    padding: 9px;
+    width: 120px;
+    text-align: center;
+    background-color: #4D3370;
+    border-radius: 2px;
+    color: #FAF4FF;
+    margin-left: -148px;
+    border-color: #FAF4FF;
+}
+.cadcaddocadastro:hover {
+    background-color: #321e4d;
+}
+.recupera{
+    max-width: 300px;
+    margin-left: 25px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estrelinha{
+    width: 25px;
+    margin-right: 300px;
+}
+.regritas{
+    margin-left: 50px;
+    margin-top: -7%;
+    text-align: left;
+
+}
+.duque{
+    width: 120px;
+    position: absolute; 
+    bottom: 96%; 
+    left: -5%; 
+}
+.pingu{
+    width: 120px;
+    position: absolute; 
+    bottom: -6%;
+    right: -6%;
+}
+.continuar{
+    padding: 9px;
+    width: 120px;
+    text-align: center;
+    background-color: #4D3370;
+    border: 0ch;
+    border-radius: 2px;
+    color: #FAF4FF;
+    margin-left: 172px;
+}
+.duque, .pingu {
+    width: 120px;
+    max-width: 100%; /* Para que as imagens se ajustem ao tamanho do container */
+}
+@media screen and (max-width: 768px) {
+    .poplogin {
+        width: 90%; /* Ajusta o tamanho do container em telas menores */
+    }
+}
+.naopode{
+    width: 120px;
+    position: absolute; 
+    bottom: 110%; 
+    left: 20%; 
+}
